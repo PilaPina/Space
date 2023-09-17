@@ -1,44 +1,84 @@
-@media screen and (max-width: 800px)
 
-.main {
-    float: left;
-    width: 60%;
+/* For responsiveness */
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+    .header {
+        flex-direction: column-reverse;
+    }
+    .main {
+        flex-direction: column;
+    }
+}
+
+* {
+    font-family: 'Saira', sans-serif;
 }
 
 body {
     background-image: url(images/SpaceBackground.png);
     background-size: cover;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: aliceblue;
     max-width: 100%;
     height: auto;
 }
 
 
-h1 {
-    font-size: 10vw;
-    max-height: 300px;
-    padding: 0;
+/* container for header text and moon image */
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px;
 }
 
+.moon {
+    align-self: flex-start;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+/* container for rocket image and main text */
+.main {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: space-around;
+}
+
+.imagebox {
+    width: 50px;
+    height: 80px;
+    align-self: center;
+    padding: auto;
+    margin: 100px;
+}
+
+.textbox {
+    display: flex;
+    flex-
+    justify-content: center;
+    align-self: center;
+}
+
+ 
+/* footer content */
 ul {
     list-style: none;
-}
- 
-.social {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 40px;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    margin: 20px 0;
 }
 
 .footer {
     display: flex;
     flex-wrap: wrap;
+    position: absolute;
+}
 
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: white;
+    gap: 20px;
 }
