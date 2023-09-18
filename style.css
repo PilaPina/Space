@@ -75,13 +75,17 @@ h1 {
     margin-bottom: 50px;
 }
 
+/* Trying out hover states for image*/
 .imagebox {
     margin-top: 35px;
     cursor: pointer;
+    transition: .3s ease;
+    backface-visibility: hidden;
 }
 
-.imagebox:hover {
-    color: rgb(231, 101, 231);
+.imagebox:hover{
+    opacity: 0.6;
+    filter: invert(100%);
 }
 
 .textbox {
@@ -159,5 +163,9 @@ h4 {
 }
 
 ion-icon:hover {
+    color: rgb(231, 101, 231);
+}
+
+a:hover {
     color: rgb(231, 101, 231);
 }
